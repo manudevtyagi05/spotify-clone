@@ -244,9 +244,19 @@ button{
     margin-left: 3px;
     border-radius: 10px;
     color: white;
-    overflow: auto;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #333; 
+    border-radius: 8px; 
+    
 }
  
 #part2 #header2{
@@ -256,6 +266,7 @@ button{
     display: flex;
     align-items: center;
     position: fixed;
+
 }
 
 #header2 .LandR{
@@ -347,6 +358,24 @@ button{
     width: 210px;
     height: 290px;
     border-radius: 10px;
+    position: relative;
+}
+
+.song1 .playbutt{
+    margin-left: 145px;
+    margin-top: 160px;
+    position: absolute;
+    background-color: #1fdf64;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.playbutt:hover{
+    opacity: 1;
+    margin-top: 150px;
 }
 
 .song1 img{
